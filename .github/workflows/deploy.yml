@@ -20,6 +20,8 @@ jobs:
       with:
         distribution: 'temurin'
         java-version: '21'
+    - name: Give Gradle permission
+      run: chmod +x gradlew
 
     # Usamos Gradle en lugar de Maven
     - name: Build with Gradle
