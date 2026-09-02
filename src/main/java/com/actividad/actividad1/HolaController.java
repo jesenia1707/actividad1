@@ -12,7 +12,7 @@ import com.actividad.actividad1.dto.DtoHola;
 public class HolaController {
 
      @GetMapping("/hola")
-     //@PreAuthorize("hasRole('Prueba.Read')")
+     @PreAuthorize("hasRole('Prueba.read')")
     public DtoHola sayHello() {
         return new DtoHola("Holaaaaaa!");
 
